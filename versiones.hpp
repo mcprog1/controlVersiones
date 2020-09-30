@@ -1,5 +1,6 @@
 #ifndef VERSIONES_H
 #define VERSIONES_H
+#include <string>
 
 enum retorno{
 	OK, ERROR, NO_IMPLEMENTADA
@@ -7,15 +8,23 @@ enum retorno{
 typedef enum retorno TipoRet;
 
 struct archivo{
-	
+	Cadena nombre = new char(50);
 };
 typedef archivo* Archivo;
 
-struct cadena{
-	
+struct linea{
+	Cadena contenido = new char(5000);
+	int numero_linea;
+	linea* siguiente;
+	linea* anteriror;
+	Archivo* archivo;
 };
+typedef linea* Linea;
 
-void menu();
+typedef char *Cadena;
+
+Archivo crearArchivo(Cadena);
+
 
 
 
