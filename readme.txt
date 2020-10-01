@@ -1,3 +1,5 @@
+-- CONTROL DE VERSION --
+
 echo "# controlVersiones" >> README.md
 git init
 git add README.md
