@@ -24,6 +24,8 @@ typedef char* Cadena;
 
 
 /*========Definicion de funciones o procedimientos========*/
+void menu();
+void lecturaComando(Cadena);
 Archivo crearArchivo(Cadena,Linea);// Crea el archivo.
 Linea crearLinae(char,int,Linea); // Crea las lineas para el archivo.
 Linea cima(Linea);

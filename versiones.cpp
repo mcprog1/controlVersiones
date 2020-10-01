@@ -5,6 +5,35 @@
 #include <string>
 using namespace std;
 
+
+/*========Menu========*/
+void menu(){
+	cout<<"CrearArchivo"<<endl;
+	cout<<"InsertarLinea"<<endl;
+	cout<<"MostrarTexto"<<endl;
+	cout<<"BorrarArchivo"<<endl;
+	cout<<"BorrarLinea"<<endl;
+	cout<<"Salir"<<endl;
+}
+/*========LecturaComando========*/
+void lecturaComando(Cadena cmd){
+	/*switch(cmd)
+	{
+		case 'salir':
+			break;
+		case 'creararchivo':
+			
+			break;
+		case 'insertarlinea':
+			break;
+		case 'mostrartexto':
+			break;
+		case 'borrararchivo':
+			break;
+		case 'borrarlinea':
+			break;
+	}*/
+}
 /*========CrearArchivo========*/
 Archivo crearArchivo(Cadena nombre,Linea linea){
 	Archivo arch = new archivo;
