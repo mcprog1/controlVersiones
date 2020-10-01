@@ -8,22 +8,21 @@ enum retorno{
 typedef enum retorno TipoRet;
 
 struct archivo{
-	Cadena nombre = new char(50);
+	char* name;
+	struct linea *lineas;
 };
 typedef archivo* Archivo;
 
 struct linea{
-	Cadena contenido = new char(5000);
+	char contenido;
 	int numero_linea;
 	linea* siguiente;
-	linea* anteriror;
-	Archivo* archivo;
 };
 typedef linea* Linea;
 
-typedef char *Cadena;
+typedef char* Cadena;
 
-Archivo crearArchivo(Cadena);
+Archivo crearArchivo(Cadena,Linea);
 
 
 

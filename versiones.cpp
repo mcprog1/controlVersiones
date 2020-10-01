@@ -6,15 +6,19 @@
 using namespace std;
 
 /*========CrearArchivo========*/
-Archivo crearArchivo(Cadena nombre){
+Archivo crearArchivo(Cadena nombre,Linea linea){
 	Archivo arch = new archivo;
-	arch->name = nombre;
-	return arch;
+	if(arch)
+	{
+		arch->name = nombre;
+		arch->lineas = linea;
+		return arch;
+	}else{
+		return NULL;
+	}
 }
 
-string leerComando(String comando){
-	stlwr(comando);
-	
-}
+
+
 
 #endif
