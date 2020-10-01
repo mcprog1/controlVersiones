@@ -18,7 +18,20 @@ Archivo crearArchivo(Cadena nombre,Linea linea){
 	}
 }
 
+/*========InsertarLinea========*/
 
 
+
+
+/*========MostrarTexto========*/
+
+
+
+
+/*========BorrarArchivo========*/
+
+
+
+/*========BorrarLinea========*/
 
 #endif
